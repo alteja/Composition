@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Composition</string>
+    <string name="button_go">GO!</string>
+    <string name="title_choose_level">Выберите уровень:</string>
+    <string name="level_beginner">Начальный</string>
+    <string name="level_light">ЛЕГКИЙ</string>
+    <string name="level_middle">СРЕДНИЙ</string>
+    <string name="level_hard">СЛОЖНЫЙ</string>
 </resources>
