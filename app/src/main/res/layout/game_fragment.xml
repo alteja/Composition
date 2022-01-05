@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -20,17 +21,17 @@
 
     <TextView
         android:id="@+id/tv_sum"
+        style="@style/QuestionTextStyle"
         android:layout_width="144dp"
         android:layout_height="144dp"
         android:background="@drawable/ic_circle"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:text="@string/text_1"
         app:layout_constraintBottom_toTopOf="@+id/tv_left_number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        style="@style/QuestionTextStyle"
-        android:text="1" />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/tv_left_number"
@@ -40,24 +41,24 @@
         style="@style/QuestionTextStyle"
         app:layout_constraintBottom_toTopOf="@+id/tv_option_1"
         app:layout_constraintEnd_toStartOf="@+id/tv_question"
-        app:layout_constraintDimensionRatio="@ratio/proportion_btn"
+        app:layout_constraintDimensionRatio="?android:attr/scrollbarSize"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_sum"
-        android:text="7" />
+        android:text="@string/text_7" />
 
     <TextView
         android:id="@+id/tv_question"
+        style="@style/QuestionTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        style="@style/QuestionTextStyle"
         android:background="@color/teal_700"
-        app:layout_constraintDimensionRatio="1:1"
+        android:text="@string/text_question"
         app:layout_constraintBottom_toBottomOf="@+id/tv_left_number"
+        app:layout_constraintDimensionRatio="?android:attr/scrollbarSize"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tv_left_number"
-        app:layout_constraintTop_toTopOf="@+id/tv_left_number"
-        android:text="@string/question_mark" />
+        app:layout_constraintTop_toTopOf="@+id/tv_left_number" />
 
     <TextView
         android:id="@+id/tv_option_1"
@@ -69,7 +70,7 @@
         app:layout_constraintEnd_toStartOf="@+id/tv_option_5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="1" />
+        android:text="@string/text_1" />
 
     <TextView
         android:id="@+id/tv_option_2"
@@ -81,7 +82,7 @@
         app:layout_constraintEnd_toStartOf="@+id/tv_option_6"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/tv_option_4"
-        android:text="2" />
+        android:text="@string/text_2" />
 
     <TextView
         android:id="@+id/tv_option_3"
@@ -92,7 +93,7 @@
         app:layout_constraintBottom_toTopOf="@+id/tv_option_4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tv_option_5"
-        android:text="3" />
+        android:text="@string/text_3" />
 
     <TextView
         android:id="@+id/tv_option_4"
@@ -104,7 +105,7 @@
         app:layout_constraintEnd_toStartOf="@+id/tv_option_5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="4" />
+        android:text="@string/text_4" />
 
     <TextView
         android:id="@+id/tv_option_5"
@@ -115,19 +116,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tv_option_6"
         app:layout_constraintStart_toEndOf="@+id/tv_option_4"
-        android:text="5" />
+        android:text="@string/text_5" />
 
     <TextView
         android:id="@+id/tv_option_6"
+        style="@style/OptionTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        style="@style/OptionTextStyle"
         android:background="@android:color/holo_blue_bright"
+        android:text="@string/text_6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toEndOf="@+id/tv_option_5"
-        android:text="6" />
+        app:layout_constraintStart_toEndOf="@+id/tv_option_5" />
 
     <TextView
         android:id="@+id/tv_answers_progress"

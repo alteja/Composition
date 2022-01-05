@@ -6,7 +6,7 @@
     <string name="level_light">ЛЕГКИЙ</string>
     <string name="level_middle">СРЕДНИЙ</string>
     <string name="level_hard">СЛОЖНЫЙ</string>
-    <string name="question_mark">?</string>
+
     <string name="progress_answers">0%</string>
     <string name="game_over">Game over!</string>
     <string name="count_right_answ">Необходимое количество правильных ответов: %s</string>
@@ -14,5 +14,13 @@
     <string name="need_pers_riqht_answ">Необходимый процент правильных ответов: %s</string>
     <string name="pers_riqht_answ">Процент правильных ответов: %s</string>
     <string name="try_again">Попробовать снова</string>
-    <string name="proportion_btn">1:1</string>
+    <string name="text_7">7</string>
+    <string name="text_question">~?</string>
+    <string name="text_1">1</string>
+    <string name="text_2">2</string>
+    <string name="text_3">3</string>
+    <string name="text_4">4</string>
+    <string name="text_5">5</string>
+    <string name="text_6">6</string>
+
 </resources>
