@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_all_screen"
-    tools:context=".presentation.WelcomeFragment">
+    android:layout_gravity="top"
+    tools:context=".presentation.WelcomeFragment"
+    android:orientation="vertical">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:orientation="vertical" >
+        android:layout_weight="1"
+        android:background="@drawable/frog"
+        android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btn_ok_welcome_fr"
-                style="@style/Widget.AppCompat.Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:background="@drawable/ic_button_ok"
-                android:text="@string/button_go"
-                android:textColor="@color/black"
-                android:textSize="24sp" />
-        </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_ok_welcome_fr"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/ic_button_ok"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/button_go"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+</LinearLayout>
+</layout>
